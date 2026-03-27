@@ -1,0 +1,9 @@
+name: Telegram push alert
+
+on:
+  push:
+    branches: ["**"]
+
+jobs:
+  alert:
+    uses: loventure-app/workflows/.github/workflows/telegram-alert-reusable.yml@main
