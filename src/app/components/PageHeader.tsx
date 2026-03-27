@@ -21,13 +21,13 @@ export default function PageHeader({
   title: string;
   lastUpdated: string;
 }) {
-  const [hidden, setHidden] = useState(false);
+  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    setHidden(isWebView());
+    setVisible(!isWebView());
   }, []);
 
-  if (hidden) return null;
+  if (!visible) return null;
 
   return (
     <>
