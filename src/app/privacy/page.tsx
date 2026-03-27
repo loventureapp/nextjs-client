@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageHeader from "../components/PageHeader";
 
 export const metadata: Metadata = {
   title: "Privacy Policy - Loventure",
@@ -8,12 +9,9 @@ export const metadata: Metadata = {
 export default function PrivacyPage() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-12">
-      <h1 className="text-3xl font-bold mb-6">Privacy Policy</h1>
-      <p className="text-sm text-gray-500 mb-8">
-        Last updated: March 7, 2026
-      </p>
+      <PageHeader title="Privacy Policy" lastUpdated="March 7, 2026" />
 
-      <section className="space-y-6 text-gray-700 leading-relaxed">
+      <section className="space-y-6 text-gray-700 dark:text-gray-200 leading-relaxed">
         <div>
           <h2 className="text-xl font-semibold mb-2">1. Introduction</h2>
           <p>
